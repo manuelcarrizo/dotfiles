@@ -36,6 +36,16 @@ do_add() {
     fi
 }
 
+do_revert() {
+    [ $# -eq 0 ] && { echo "No files to revert"; exit 1; }
+
+    if [ $(is_git) -eq 1 ]; then
+        git checkout -- $@
+    elif [ $(is_svn) -eq 1 ]; then
+        svn revert $@
+    fi
+}
+
 do_commit() {
     [ $# -eq 0 ] && { echo "No commit message given"; exit 1; }
     if [ $(is_git) -eq 1 ]; then
@@ -69,6 +79,7 @@ alias status='do_status'
 alias quiet='do_quiet'
 alias add='do_add'
 alias commit='do_commit'
+alias revert='do_revert'
 alias last_commit='do_last_commit'
 alias recover='do_recover'
 alias latest='git stash && git pull && git stash pop'
