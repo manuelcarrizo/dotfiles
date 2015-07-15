@@ -1,0 +1,11 @@
+curl
+tig
+subversion
+meld
+build-essential
+cmake
+filezilla
+vlc
+wireshark
+nmap
+virtualenv
