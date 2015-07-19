@@ -10,7 +10,7 @@ sudo apt-get install git
 if [ ! -d INSTALL_PATH ] ;
 then
     echo "Cloning dotfiles to $INSTALL_PATH"
-    git clone git@bitbucket.org:manuelcarrizo/dotfiles.git $INSTALL_PATH
+    git clone https://github.com/manuelcarrizo/dotfiles.git $INSTALL_PATH
 fi
 
 # install packages
