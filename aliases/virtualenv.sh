@@ -7,4 +7,12 @@ do_activate() {
     fi
 }
 
+do_venv() {
+    if [ ! -d venv ] ;
+    then 
+        virtualenv venv
+    fi
+}
+
 alias activate="do_activate"
+alias venv="do_venv"

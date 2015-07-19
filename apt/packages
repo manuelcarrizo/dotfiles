@@ -1,3 +1,4 @@
+aptitude
 curl
 tig
 subversion
@@ -9,3 +10,5 @@ vlc
 wireshark
 nmap
 virtualenv
+docker.io
+chromium-browser
