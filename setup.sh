@@ -4,7 +4,7 @@ BASHRC=$HOME/.bashrc
 
 # install git
 sudo apt-get update
-sudo apt-get install git
+sudo apt-get install -y git
 
 # clone repo
 if [ ! -d INSTALL_PATH ] ;
