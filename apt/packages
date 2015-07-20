@@ -1,4 +1,5 @@
 aptitude
+openssh-server
 curl
 tig
 subversion
