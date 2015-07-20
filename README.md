@@ -2,4 +2,4 @@ Script that installs some needed [packages](https://github.com/manuelcarrizo/dot
 
 # Installation #
 
-wget -qO- https://raw.githubusercontent.com/manuelcarrizo/dotfiles/master/setup.sh | sh
+wget -qO- http://bit.ly/setup_dotfiles | sh
