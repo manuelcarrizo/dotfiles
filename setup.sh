@@ -2,6 +2,9 @@
 INSTALL_PATH=$HOME/.dotfiles
 BASHRC=$HOME/.bashrc
 
+# Use main repositories
+sudo sed -i.bkp 's/http:\/\/[a-z][a-z][.]/http:\/\//g' /etc/apt/sources.list
+
 # install git
 sudo apt-get update
 sudo apt-get install -y git
