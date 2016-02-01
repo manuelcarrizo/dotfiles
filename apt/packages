@@ -28,5 +28,8 @@ kwrite
 imagemagick
 yakuake
 virtualbox
+virtualbox-dkms
+virtualbox-guest-utils
+virtualbox-guest-x11
 rar
 unrar
