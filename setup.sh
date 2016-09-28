@@ -21,6 +21,9 @@ if [ ! -d $INSTALL_PATH ] ;
 then
     echo "Cloning dotfiles to $INSTALL_PATH"
     git clone https://github.com/manuelcarrizo/dotfiles.git $INSTALL_PATH
+else
+    cd $INSTALL_PATH
+    git pull
 fi
 
 # install packages
