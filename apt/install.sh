@@ -1,5 +1,7 @@
 #!/bin/bash
 
+CURRENT_PATH=`dirname ${BASH_SOURCE}`
+
 if [ "$SYSTEM" == "Debian" ]
 then
     EXTRA_PKGS="$CURRENT_PATH/debian"
@@ -8,7 +10,6 @@ then
     EXTRA_PKGS="$CURRENT_PATH/ubuntu"
 fi
 
-CURRENT_PATH=`dirname ${BASH_SOURCE}`
 sudo apt-get install -y $(cat $CURRENT_PATH/packages $EXTRA_PKGS | grep -vE "^\s*#" | tr "\n" " ")
 
 curl -sSL https://get.docker.com/ | sh
