@@ -14,8 +14,6 @@ nmap
 virtualenv
 python
 python-pip
-gnome-do
-gnome-do-plugins
 clementine
 kolourpaint4
 kwrite
@@ -27,3 +25,13 @@ virtualbox-guest-utils
 virtualbox-guest-x11
 rar
 unrar
+tlp
+evince
+mpv
+net-tools
+htop
+iftop
+transmission-qt
+gparted
+jq
+powertop
