@@ -26,12 +26,11 @@ virtualbox-guest-x11
 rar
 unrar
 tlp
-evince
 mpv
 net-tools
 htop
 iftop
-transmission-qt
+qbittorrent
 gparted
 jq
 powertop
