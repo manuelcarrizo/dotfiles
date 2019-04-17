@@ -14,7 +14,7 @@ fi
 
 # install git
 sudo apt-get update
-sudo apt-get install -y git
+sudo apt-get install -y git curl
 
 # clone repo
 if [ ! -d $INSTALL_PATH ] ;
